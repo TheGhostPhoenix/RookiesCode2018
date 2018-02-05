@@ -1,15 +1,17 @@
 
 package org.usfirst.frc.team1155.robot;
 
+import org.usfirst.frc.team1155.robot.commands.ExampleCommand;
+import org.usfirst.frc.team1155.robot.subsystems.ClimbSubsystem;
+import org.usfirst.frc.team1155.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team1155.robot.subsystems.LiftSubsystem;
+
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
-import org.usfirst.frc.team1155.robot.commands.ExampleCommand;
-import org.usfirst.frc.team1155.robot.subsystems.ExampleSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -21,6 +23,8 @@ import org.usfirst.frc.team1155.robot.subsystems.ExampleSubsystem;
 public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final LiftSubsystem liftSubsystem = new LiftSubsystem(); 
+	public static final ClimbSubsystem climbSubsystem = new ClimbSubsystem();
 	public static OI oi;
 
 	Command autonomousCommand;
