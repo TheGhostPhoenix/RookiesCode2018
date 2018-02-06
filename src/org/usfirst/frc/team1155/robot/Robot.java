@@ -5,6 +5,8 @@ import org.usfirst.frc.team1155.robot.commands.ExampleCommand;
 import org.usfirst.frc.team1155.robot.subsystems.ClimbSubsystem;
 import org.usfirst.frc.team1155.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team1155.robot.subsystems.LiftSubsystem;
+import org.usfirst.frc.team1155.robot.subsystems.MecanumDriveSubsystem;
+import org.usfirst.frc.team1155.robot.subsystems.TankDriveSubsystem;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -25,6 +27,8 @@ public class Robot extends IterativeRobot {
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static final LiftSubsystem liftSubsystem = new LiftSubsystem(); 
 	public static final ClimbSubsystem climbSubsystem = new ClimbSubsystem();
+	public static final TankDriveSubsystem tankSubsystem = new TankDriveSubsystem();
+	public static final MecanumDriveSubsystem mecanumSubsystem = new MecanumDriveSubsystem();
 	public static OI oi;
 
 	Command autonomousCommand;

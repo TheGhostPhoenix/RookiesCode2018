@@ -6,7 +6,6 @@ import org.usfirst.frc.team1155.robot.Robot;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.command.Command;
-
 public class ClimbCommand extends Command {
 	boolean isDown = true;
 	
@@ -15,6 +14,7 @@ public class ClimbCommand extends Command {
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub
 		return !isDown;
+		
 	}
 	
 	protected void execute()
